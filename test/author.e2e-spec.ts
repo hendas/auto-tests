@@ -12,7 +12,6 @@ import {
 } from './utils';
 import { Author } from '../src/author/entities/author.entity';
 import { AuthorController } from '../src/author/author.controller';
-import { configService } from '../src/config/config.service';
 import { CreateAuthorDto } from 'src/author/dto/create-author.dto';
 import { UpdateAuthorDto } from 'src/author/dto/update-author.dto';
 
@@ -32,10 +31,7 @@ describe('AuthorController (e2e)', () => {
       createAuthorRepositoryMockFactory(authors);
 
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [
-        TypeOrmModule.forRoot(configService.getTypeOrmConfig()),
-        AuthorModule,
-      ],
+      imports: [TypeOrmModule.forRoot({ type: 'sqljs' }), AuthorModule],
       controllers: [AuthorController],
       providers: [
         AuthorService,
