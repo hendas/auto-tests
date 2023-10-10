@@ -17,7 +17,7 @@ Obecnie najbardziej popularny framework dla Node.js. Inspirowany Angularem.
 
 ### Dependency injection
 
-Wstrzykiwanie zależności (DI) to wzorzec projektowy używany do implementacji IoC (Inversion of Control - odwrócenie sterwoania). Umożliwia tworzenie obiektów zależnych poza klasą i udostępnianie tych obiektów klasie na różne sposoby. Używając DI, przenosimy tworzenie i wiązanie obiektów zależnych poza klasę, która od nich zależy.
+Wstrzykiwanie zależności (DI) to wzorzec projektowy używany do implementacji IoC (Inversion of Control - odwrócenie sterowania). Umożliwia tworzenie obiektów zależnych poza klasą i udostępnianie tych obiektów klasie na różne sposoby. Używając DI, przenosimy tworzenie i wiązanie obiektów zależnych poza klasę, która od nich zależy.
 
 [źródło](https://www.tutorialsteacher.com/ioc/dependency-injection)
 
