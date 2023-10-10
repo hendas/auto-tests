@@ -12,8 +12,8 @@ import {
 } from './utils';
 import { Author } from '../src/author/entities/author.entity';
 import { AuthorController } from '../src/author/author.controller';
-import { CreateAuthorDto } from 'src/author/dto/create-author.dto';
-import { UpdateAuthorDto } from 'src/author/dto/update-author.dto';
+import { CreateAuthorDto } from '../src/author/dto/create-author.dto';
+import { UpdateAuthorDto } from '../src/author/dto/update-author.dto';
 
 const isoStringRegex =
   /\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z)/;
